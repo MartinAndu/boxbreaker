@@ -15,6 +15,7 @@ public class PanelGame extends JPanel{
 	private  Imagen I=new Imagen();
 	public PanelGame(){
 		super();
+		setBounds(0,0,800,600);
 		at=new AffineTransform();
 		setVisible(true);
 		tanque=I.loadImg("canon.GIF");

@@ -5,10 +5,12 @@ public class Tanque {
 	private int Puntaje;
 	private int Estado;
 	private float Velocidad;
+	private int rotacion;
 	public Tanque(){
 		Puntaje=0;
 		Estado=0;
 		Velocidad=5;
+		rotacion=0;
 	}
 	public int getPoints(){
 		return(Puntaje);
@@ -30,10 +32,12 @@ public class Tanque {
 	}
 	public void rotar(int dir,PanelGame p){
 		if(dir==0){
-			p.rotate(5);
+			rotacion+=Velocidad;
+			p.rotate(rotacion);
 		}else{
-			p.rotate(-5);
+			rotacion-=Velocidad;
+			p.rotate(rotacion);
 		}
-			
+		
 	}
 }

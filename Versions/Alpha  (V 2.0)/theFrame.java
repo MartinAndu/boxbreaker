@@ -146,7 +146,7 @@ public class theFrame extends JFrame implements ActionListener {
 		}
 		
 		if(e.getSource()==Normal){
-			Game.show();
+			Game.setVisible(true);
 		}
 
 	}

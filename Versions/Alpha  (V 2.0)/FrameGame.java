@@ -14,9 +14,11 @@ public class FrameGame extends JFrame implements KeyListener{
 		setVisible(false);
 		setLayout(null);
 		
-		Vista=new PanelGame();
-		
+		Vista=new PanelGame();	
 		this.add(Vista);
+		
+		tank1=new Tanque();
+		addKeyListener(this);
 	}
 	public void keyPressed(KeyEvent e) {
 		if(e.getKeyText(e.getKeyCode())=="Derecha"){
@@ -25,6 +27,7 @@ public class FrameGame extends JFrame implements KeyListener{
 		if(e.getKeyText(e.getKeyCode())=="Izquierda"){
 			tank1.rotar(1,Vista);
 		}
+		repaint();
 	}
 
 	public void keyReleased(KeyEvent e) {
@@ -36,5 +39,4 @@ public class FrameGame extends JFrame implements KeyListener{
 		// TODO Auto-generated method stub
 		
 	}
-	
 }
