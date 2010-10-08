@@ -7,8 +7,7 @@ public class Tanque {
 	private float Velocidad;
 	private int rotacion;
 	private boolean disparo;
-	private PanelGame PG;
-	
+
 	public Tanque(){
 		Puntaje=0;
 		Estado=0;
@@ -16,7 +15,7 @@ public class Tanque {
 		rotacion=0;
 		disparo=false;
 	}
-	
+
 	public int getPoints(){
 		return(Puntaje);
 	}
@@ -40,10 +39,10 @@ public class Tanque {
 	}
 	public void rotar(int dir){
 		if(dir==0){
-			rotacion+=Velocidad;	
+			rotacion+=Velocidad;
 		}else{
-			rotacion-=Velocidad;	
-		}	
+			rotacion-=Velocidad;
+		}
 	}
 	public boolean seDisparo(){
 		if(disparo){
