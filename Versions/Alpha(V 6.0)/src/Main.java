@@ -8,5 +8,5 @@ public class Main {
 		// TODO Auto-generated method stub
 		theFrame a=new theFrame();
 	}
-
+	
 }
