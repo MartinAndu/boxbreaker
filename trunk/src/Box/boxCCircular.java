@@ -8,6 +8,7 @@ import Generic.Lista;
 import Generic.Shot;
 
 
+
 public class boxCCircular extends boxContainer implements Serializable{
 	/**
 	 * 
